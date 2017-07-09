@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/*********************
+********HEADER********
+**********************/
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 50px auto;
+  font-size: 2em;
+}
+
+nav {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: black;
+}
+
+.profile-pic {
+  margin-top: 50px;
+  width: 65%;
+}
+
+.header p {
+  font-size: 1em;
+  margin: 20px 50px;
+}
+
+
+/*********************
+*********BODY*********
+**********************/
+
+body {
+  background-color: #FAFAFA;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.wrapper {
+  background-color: #FFF;
+}
+
+.wrapper h2 {
+  font-size: 1.25em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.skills{
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.card {
+  max-width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1em;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/*********************
+********CONTACT*******
+**********************/
+
+.contact {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact h2 {
+  margin-top: 50px;
+  font-size: 1.25em;
+}
+
+.contact p {
+  font-size: 1em;
+}
+
+
+/*********************
+*********FOOTER*******
+**********************/
+
+.divider {
+  width: 95%;
+  margin: 100px auto 10px auto;
+  height: 1px;
+  background-color: gray;
+}
+
+.footer p {
+  display: inline-block;
+  width: 49%;
+  font-size: 1em;
+}
+
+#dev-name {
+  text-align: left;
+  padding-left: 2.5%;
+  font-weight: bold;
+}
+
+#back-to-top {
+  text-align: right;
+  padding-right: 2.5%;
+}
+
+#back-to-top a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+/*********************
+*******CLEAFIX********
+**********************/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*****************************************
+**************MEDIA QUERIES***************
+******************************************/
+
+@media screen and (min-width: 768px) {
+
+  /*********************
+  ********HEADER********
+  **********************/
+
+    nav a{
+      display: inline-block;
+      background-color: #FAFAFA;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0;
+    }
+
+
+
+    .profile-pic {
+      max-width: 40%;
+      margin-bottom: 30px;
+      float: right;
+      margin-right: 20px;
+    }
+
+    .header p {
+      width: 40%;
+      float: left;
+      margin-top: 50px;
+      font-size: 1.25em;
+    }
+
+    /*********************
+    *********BODY*********
+    **********************/
+
+    #skills {
+      padding: 50px 0 30px 0;
+      margin: 0;
+    }
+
+    .card {
+      max-width: 40%;
+      display: inline-block;
+      margin-left: 2.5%;
+      margin-right: 2.5%;
+      vertical-align: top;
+    }
+
+
+    /*********************
+    ********CONTACT*******
+    **********************/
+
+
+    /*********************
+    *********FOOTER*******
+    **********************/
+
+    #back-to-top {
+      display: none;
+    }
+
+    #dev-name {
+      width: 39%;
+    }
+
+    .bottom-nav {
+      display: inline-block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 56%;
+      text-align: right;
+      margin-right: 2.5%;
+    }
+
+    .bottom-nav li {
+      display: inline-block;
+
+    }
+
+    .bottom-nav li a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 15px 10px 0 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+  /*********************
+  ********HEADER********
+  **********************/
+  #top {
+    width: 30%;
+    display: inline-block;
+  }
+
+  nav {
+    width: 60%;
+    display: inline-block;
+    text-align: right;
+  }
+
+  .profile-pic {
+    width: 42.5%;
+    margin-right: 2.5%;
+    text-align: left;
+  }
+
+  .header p {
+    width: 52.5%;
+    margin-right: 0;
+    margin-left: 2.5%;
+  }
+
+  /*********************
+  *********BODY*********
+  **********************/
+
+  .card {
+    width: 28%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+}
